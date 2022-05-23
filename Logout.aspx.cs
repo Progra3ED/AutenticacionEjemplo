@@ -13,7 +13,7 @@ namespace AutenticacionEjemplo
         protected void Page_Load(object sender, EventArgs e)
         {
             FormsAuthentication.SignOut();
-            FormsAuthentication.RedirectToLoginPage();
+            Response.Redirect("Default", true);
         }
     }
 }

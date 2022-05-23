@@ -26,7 +26,7 @@ namespace AutenticacionEjemplo
                 string cookiestr;
                 HttpCookie ck;
                 tkt = new FormsAuthenticationTicket(1, Login1.UserName, DateTime.Now,
-                DateTime.Now.AddMinutes(30), Login1.RememberMeSet, "algun dato extra");
+                DateTime.Now.AddMinutes(30), Login1.RememberMeSet, "2");
                 cookiestr = FormsAuthentication.Encrypt(tkt);
                 ck = new HttpCookie(FormsAuthentication.FormsCookieName, cookiestr);
                 if (Login1.RememberMeSet)
